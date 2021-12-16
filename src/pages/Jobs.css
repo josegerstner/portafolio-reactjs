@@ -1,0 +1,56 @@
+.job-box {
+    padding: 10px;
+}
+
+.job-img {
+    height: 50px;
+    width: 50px;
+
+    background-color: white;
+    border-radius: 50%;
+}
+
+.job-dates {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.job-name {
+    font-size: 20px;
+}
+
+.job-job {
+    font-size: 18px;
+}
+
+.job-tasks {
+    font-size: 16px;
+    float: left;
+    text-align: justify;
+}
+
+
+/* SCROLLBAR */
+.job-container {
+    width: 100%;
+    height: 500px;
+    overflow-x: visible;
+    overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+    .job-end { text-align: none !important; }
+    .job-dates { float: none; }
+    .job-name { float: none; text-align: center; }
+    .job-job { float: none; text-align: center; }
+    
+}
+
+@media (min-width: 768px) {
+    .job-end { text-align: right !important; }
+    .job-dates { float: right; }
+    .job-name { float: left; text-align: left; }
+    .job-job { float: left; text-align: left; }
+}
