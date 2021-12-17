@@ -3,7 +3,7 @@ var profile = require('../utils/profile.json');
 
 export function ProfileCard() {
 
-    var imagesPath = "/images/";
+    var imagesPath = "/images/profile/";
     var socials = profile.social;
 
     return(

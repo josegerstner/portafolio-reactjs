@@ -3,20 +3,27 @@
 }
 
 .edu-img {
-    height: 50px;
-    width: 50px;
-}
+    height: 100px;
+    width: 100px;
 
-.edu-dates {
-    font-size: medium;
-    font-weight: 300;
-    font-style: italic;
-
-    float: right;
+    background-color: white;
+    border-radius: 20%;
 }
 
 .edu-text {
-    font-size: 16px;
     float: left;
     text-align: left;
+}
+
+.edu-name {
+    font-size: 1.3rem;
+}
+
+.edu-dates {
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.edu-title {
+    font-size: 1rem;
 }

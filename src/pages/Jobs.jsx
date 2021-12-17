@@ -2,7 +2,7 @@ import "./Jobs.css";
 var jobs = require('../utils/jobs.json');
 
 export function Jobs(){
-    var imagesPath = "/images/";
+    var imagesPath = "/images/jobs/";
 
     return(
         <div className='container job-container'>

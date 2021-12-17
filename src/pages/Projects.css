@@ -1,0 +1,14 @@
+.project-box {
+    margin-top: 10px;
+    /* border: solid 1px white; */
+    /* border-radius: 10%; */
+}
+
+.project-img {
+    width: 80%;
+    /* height: 100%; */
+}
+
+.project-img:hover {
+    width: 100%;
+}
