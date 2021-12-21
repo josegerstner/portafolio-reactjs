@@ -10,12 +10,13 @@
 }
 
 .card-header {
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 700;
 }
 
 .card-text {
-    text-shadow: 2px 2px #558ABB;
+    font-size: 1rem;
+    text-shadow: 1.5px 1.5px #558ABB;
 }
 
 .home-img {
@@ -39,7 +40,7 @@
 }
 
 .home-text {
-    font-size: 20px;
+    font-size: 0.90rem;
 }
 
 .card-img-top {

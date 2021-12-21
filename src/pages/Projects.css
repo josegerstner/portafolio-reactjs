@@ -1,14 +1,36 @@
+.project-container {
+    display: flex;
+}
+
 .project-box {
-    margin-top: 10px;
-    /* border: solid 1px white; */
-    /* border-radius: 10%; */
+    box-sizing: border-box;
+    margin-top: 25px;
+
+    position: relative;
+    display: inline-block;
+    text-align: center;
 }
 
-.project-img {
-    width: 80%;
-    /* height: 100%; */
+.img-fluid {
+    height: 80%;
+    opacity: 100%;
 }
 
-.project-img:hover {
-    width: 100%;
+.project-box:hover .img-fluid {
+    height: 100%;
+    opacity: 40%;
+}
+
+.centrado {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.project-box:hover .centrado {
+    font-size: 2rem;
+    text-shadow: 0.1rem 0.1rem black;
+    display: block;
 }

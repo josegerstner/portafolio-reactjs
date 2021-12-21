@@ -5,18 +5,22 @@ export function Projects(){
     var imagesPath = "/images/projects/";
 
     return(
-        <div className="container row">
+        <section className="project-container row">
             { projects ? projects.map( (project) => 
-            <div className="col-6 project-box">
-                <span className="project-name">{project.name}</span>
-                
-                <a href={project.link} target="_blank" rel="noreferrer">
+            <div className="col-12 col-md-6 project-box" key={project.id}>
+                <a
+                    href={project.link}
+                    target="_blank"
+                    rel="noreferrer">
                     <img
-                        className="project-img"
+                        className="img-fluid"
                         src={`${imagesPath}${project.image}`}
-                        alt={project.name} /></a>
+                        alt={project.name}
+                        title={`${project.name} - ${project.technology}`} />
+                </a>
+                    <div className="centrado">{project.name}</div>
             </div>
             ) : '' }
-        </div>
+        </section>
     );
 }

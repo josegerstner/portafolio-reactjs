@@ -10,11 +10,6 @@
     border-radius: 20%;
 }
 
-.edu-text {
-    float: left;
-    text-align: left;
-}
-
 .edu-name {
     font-size: 1.3rem;
 }
@@ -26,4 +21,19 @@
 
 .edu-title {
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .edu-text {
+        float: none;
+        text-align: center;
+        margin-top: 20px;
+    }    
+}
+
+@media (min-width: 768px) {
+    .edu-text {
+        float: left;
+        text-align: left;
+    }
 }
