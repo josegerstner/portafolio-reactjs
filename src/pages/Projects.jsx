@@ -7,7 +7,7 @@ export function Projects(){
     return(
         <section className="project-container row">
             { projects ? projects.map( (project) => 
-            <div className="col-12 col-md-6 project-box" key={project.id}>
+            <div className="col-12 col-md-6 project-box" key={project.name}>
                 <a
                     href={project.link}
                     target="_blank"
