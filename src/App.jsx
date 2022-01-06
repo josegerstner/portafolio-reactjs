@@ -25,7 +25,7 @@ function App() {
                   <Route index element={<Education />} />
                   <Route path="projects" element={<Projects />} />
                   <Route path="jobs" element={<Jobs />} />
-                  <Route path="technologies" element={<Technologies />} />
+                  {/* <Route path="technologies" element={<Technologies />} /> */}
                   <Route path="*" element={<NoMatch />} />
                 </Route>
               </Routes>

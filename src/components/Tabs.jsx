@@ -13,9 +13,9 @@ export function Tabs() {
             <li className="nav-item">
                 <CustomLink to="projects">Projects</CustomLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
                 <CustomLink to="technologies">Technologies</CustomLink>
-            </li>
+            </li> */}
         </ul>
     );
 }
