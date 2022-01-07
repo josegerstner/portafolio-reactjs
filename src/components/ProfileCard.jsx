@@ -24,6 +24,14 @@ export function ProfileCard() {
             </div>
 
             <div className="card-footer">
+                <div>
+                    <a className="btn btn-download btn-sm" 
+                        download 
+                        href="/files/cv.pdf" 
+                        role="button">
+                        Descargar CV
+                    </a>
+                </div>
                 { socials ? socials.map( (social) => 
                     <a href={social.link} 
                         target="_blank" 

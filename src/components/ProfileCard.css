@@ -25,6 +25,20 @@
     margin-bottom: 5px;
 }
 
+.home-text {
+    font-size: 0.90rem;
+}
+
+.btn-download {
+    color: white;
+    background-color: #282c34;
+}
+
+.btn-download:hover {
+    color: white;
+    background-color: #474E5C;
+}
+
 .social-img {
     width: 35px;
     height: 35px;
@@ -37,10 +51,6 @@
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-}
-
-.home-text {
-    font-size: 0.90rem;
 }
 
 .card-img-top {
