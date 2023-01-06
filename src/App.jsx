@@ -7,7 +7,7 @@ import { Projects } from './pages/Projects';
 import { Jobs } from './pages/Jobs';
 import { Education } from './pages/Education';
 import { NoMatch } from './pages/NoMatch';
-import { Technologies } from './pages/Technologies';
+// import { Technologies } from './pages/Technologies';
 
 function App() {
   return (
