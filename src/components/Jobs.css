@@ -3,22 +3,24 @@
 }
 
 .job-img {
-    height: 50px;
-    width: 50px;
-
-    background-color: white;
+    max-width: 90%;
+    max-height: 90%;
+    background-color: #D7DBDD;
     border-radius: 50%;
+}
+.job-img:hover {
+    background-color: #76D7C4;
 }
 
 .job-dates {
-    margin-top: 20px;
-    font-size: 12px;
+    /* margin-top: 20px; */
+    /* font-size: 12px; */
     font-weight: 300;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .job-name {
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .job-job {
@@ -30,15 +32,6 @@
     float: left;
     text-align: justify;
     margin-bottom: 20px;
-}
-
-
-/* SCROLLBAR */
-.job-container {
-    width: 100%;
-    height: 500px;
-    overflow-x: visible;
-    overflow-y: scroll;
 }
 
 @media (max-width: 768px) {

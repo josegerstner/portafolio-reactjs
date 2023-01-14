@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { API_URL } from "../config";
+// import { API_URL } from "../config";
+import educationJSON from '../utils/education.json'
 import "./Education.css"
 
 export function Education(){
@@ -8,9 +9,9 @@ export function Education(){
     const [loading, setLoading] = useState(true)
 
     async function fetchEducation() {
-        const response = await fetch(`${API_URL}education`)
-        const data = await response.json()
-        setEducation(data)
+        // const response = await fetch(`${API_URL}education`)
+        // const data = await response.json()
+        setEducation(educationJSON)
         setLoading(false)
     }
 
@@ -22,9 +23,10 @@ export function Education(){
         return(<h1>Loading...</h1>)
     } else {
         return(
-            <div className='container'>
+            <div className='container edu-box pt-5'>
+                <h2>Educación</h2>
                 { education ? education.map( (college) => 
-                <div className='row edu-box' key={college.name}>
+                <div className='row' key={college.name}>
                     <div className='col-12 col-md-3'>
                         <div className='row'>
                             <a href={college.link} 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API_URL } from "../config";
+import jobsJSON from "../utils/jobs.json";
 import "./Jobs.css";
 
 export function Jobs(){
@@ -8,9 +8,7 @@ export function Jobs(){
     const [loading, setLoading] = useState(true)
 
     async function fetchJobs() {
-        const response = await fetch(`${API_URL}jobs`)
-        const data = await response.json()
-        setJobs(data)
+        setJobs(jobsJSON)
         setLoading(false)
     }
 
@@ -22,33 +20,33 @@ export function Jobs(){
         return(<h1>Loading...</h1>)
     } else {
         return(
-            <div className='container job-container'>
+            <div className='mb-5'>
+                <h2 className="col-12">
+                    Experiencia laboral
+                </h2>
                 { jobs ? jobs.map( (job) => 
                 <div className='row job-box' key={`${job.name}${job.dates}`}>
-                    <div className='col-12 col-md-3 text-center'>
-                        <div className='row job-end'>
+                    <div className='col-12 col-md-3 text-center mb-3'>
+                        <div className='row'>
                             <a href={job.link} 
                                 target="_blank" 
                                 rel="noreferrer">
 
-                                <img className="job-img" 
+                                <img className="job-img img-fluid" 
                                     src={`${imagesPath}${job.image}`} 
                                     alt={job.name} />
                             </a>
                         </div>
 
-                        <div className='job-dates'>
-                            {job.dates}
-                        </div>
+                        
                     </div>
 
                     <div className='col-12 col-md-9'>
-                        <div className="container job-text">
-                            <p className="text-break">
-                                <span className="job-name fw-bold">{job.name}</span><br />
-                                <span className="job-job">{job.job}</span><br />
-                                <span className="job-tasks">{job.tasks}</span><br />
-                            </p>
+                        <div className="container text-start">
+                            <p className="fw-bold">{job.name}</p>
+                            <p className='fs-4 text-muted'>{job.dates}</p>
+                            <p className="fs-4 fw-normal">{job.job}</p>
+                            <p className="fs-5 text-break fw-light">{job.tasks}</p>
                         </div>
                     </div>
                     <hr />

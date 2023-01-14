@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { API_URL } from "../config";
+import projectsJSON from '../utils/projects.json'
 import "./Projects.css";
 
 export function Projects(){
@@ -8,9 +8,7 @@ export function Projects(){
     const [loading, setLoading] = useState(true)
 
     async function fetchProjects() {
-        const response = await fetch(`${API_URL}projects`)
-        const data = await response.json()
-        setProjects(data)
+        setProjects(projectsJSON)
         setLoading(false)
     }
 
@@ -24,19 +22,20 @@ export function Projects(){
     } else {
         return(
             <section className="project-container row">
+                <h2>Proyectos</h2>
                 { projects ? projects.map( (project) => 
-                <div className="col-12 col-md-6 project-box" key={project.name}>
+                <div className="col-12 col-md-4 project-box p-2" key={project.name}>
                     <a
                         href={project.link}
                         target="_blank"
                         rel="noreferrer">
                         <img
-                            className="img-fluid"
+                            className="img-fluid project-img"
                             src={`${imagesPath}${project.image}`}
                             alt={project.name}
                             title={`${project.name} - ${project.technology}`} />
                     </a>
-                        <div className="centrado">{project.name}</div>
+                        <div className="centrado text-shadow">{project.name}</div>
                 </div>
                 ) : '' }
             </section>

@@ -1,5 +1,3 @@
-// import type { LinkProps } from "react-router-dom";
-
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 
 export function CustomLink({ children, to, ...props }) {
