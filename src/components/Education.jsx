@@ -23,7 +23,7 @@ export function Education(){
         return(<h1>Loading...</h1>)
     } else {
         return(
-            <div className='container edu-box pt-5'>
+            <div className='container mb-5'>
                 <h2>Educación</h2>
                 { education ? education.map( (college) => 
                 <div className='row' key={college.name}>
@@ -42,13 +42,11 @@ export function Education(){
                     </div>
     
                     <div className='col-12 col-md-9'>
-                        <div className="container edu-text">
-                            <p className="text-break">
-                                <span className="edu-name">{college.name}</span><br />
-                                <span className="edu-dates">{college.dates}</span><br />
-                                <span className="edu-title">{college.title}</span><br />
-                            </p>
-                        </div>
+                        <p className="container edu-text">
+                            <span className="fw-bold">{college.name}</span><br />
+                            <span className="fs-5 text-muted">{college.dates}</span><br />
+                            <span className="fs-4 fw-normal">{college.title}</span><br />
+                        </p>
                     </div>
                     <hr />
                 </div>

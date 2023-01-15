@@ -21,7 +21,7 @@ export function Projects(){
         return(<h1>Loading...</h1>);
     } else {
         return(
-            <section className="project-container row">
+            <section className="project-container row mb-5">
                 <h2>Proyectos</h2>
                 { projects ? projects.map( (project) => 
                 <div className="col-12 col-md-4 project-box p-2" key={project.name}>

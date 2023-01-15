@@ -10,23 +10,21 @@ export function ProfileCard() {
     const [socials, setSocials] = useState([])
     const [loading, setLoading] = useState(true)
     
-    async function fetchProfile() {
-        // const response = await fetch(`${API_URL}profile`)
-        // const data = await response.json()
-        setProfile(profileJSON)
-    }
+    
 
-    async function fetchSocials() {
-        // const response = await fetch(`${API_URL}social_profile`)
-        // const data = await response.json()
-        setSocials(profile.social)
-    }
+    
 
     useEffect(()=>{
+        const fetchProfile = () => {
+            setProfile(profileJSON)
+        }
         fetchProfile()
     },[])
 
     useEffect(()=>{
+        const fetchSocials = () => {
+            setSocials(profile.social)
+        }
         fetchSocials()
         if(profile)
             setLoading(false)
