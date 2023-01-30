@@ -29,3 +29,7 @@ footer {
 .footer-text {
   text-decoration: none;
 }
+
+.tech-img {
+  max-height: 50px;
+}

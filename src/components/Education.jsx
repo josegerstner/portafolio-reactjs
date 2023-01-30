@@ -23,7 +23,7 @@ export function Education(){
         return(<h1>Loading...</h1>)
     } else {
         return(
-            <div className='container mb-5'>
+            <div className='container my-5'>
                 <h2>Educación</h2>
                 { education ? education.map( (college) => 
                 <div className='row' key={college.name}>

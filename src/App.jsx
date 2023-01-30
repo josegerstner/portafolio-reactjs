@@ -5,16 +5,18 @@ import { ProfileCard } from './components/ProfileCard';
 import { Projects } from './components/Projects';
 import { Jobs } from './components/Jobs';
 import { Education } from './components/Education';
+import { Technologies } from './components/Technologies';
 
 function App() {
   return (
     <Router>
       <div className='app'>
+        <ProfileCard />
         <div className="container">
-          <ProfileCard />
           <Jobs />
           <Education />
           <Projects />
+          <Technologies />
         </div>
       </div>
     </Router>
