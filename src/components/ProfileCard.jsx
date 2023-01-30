@@ -8,7 +8,6 @@ export function ProfileCard() {
     var imagesPath = "/images/profile/";
     const [profile, setProfile] = useState({})
     const [loading, setLoading] = useState(true)
-    const [showDropdown, setShowDropdown] = useState('')
     const [showModal, setShowModal] = useState(false)
     const email = "joseernestogerstnerjavid@gmail.com"    
 
@@ -26,14 +25,12 @@ export function ProfileCard() {
 
     function handleClick(e) {
         e.preventDefault()
+
         // Get the text field
         var copyText = email
-
         // Copy the text inside the text field
         navigator.clipboard.writeText(copyText);
-
         // Alert the copied text
-        // alert("Copied the text: " + copyText);
         setShowModal(true)
     }
     
@@ -41,11 +38,6 @@ export function ProfileCard() {
         if(showModal)
             setTimeout(function() {setShowModal(false)}, 2000)
     },[showModal])
-
-    
-    function nothing(e){
-        e.preventDefault()
-    }
 
     if(loading){
         return(<Loading />);
@@ -96,17 +88,14 @@ export function ProfileCard() {
                         </p>
                             
                         <div className="dropdown-center">
-                            <button className="btn btn-lg btn-dark dropdown-toggle"
+                            <button className="btn btn-dark dropdown-toggle"
                                 type="button"
                                 data-bs-toggle="dropdown"
-                                // onMouseEnter={setShowDropdown('show')}
-                                // onMouseLeave={setShowDropdown('')}
                                 aria-expanded="false"
-                                // onClick={(e) => nothing(e)}
                                 id="email">
                                 {email}
                             </button>
-                            <ul className={`dropdown-menu dropdown-menu-dark dropdown-menu-end ${showDropdown}`}>
+                            <ul className={`dropdown-menu dropdown-menu-dark dropdown-menu-end`}>
                                 <li>
                                     <button
                                         className="dropdown-item btn btn-lg" 
