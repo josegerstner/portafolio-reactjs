@@ -55,7 +55,7 @@ export function ProfileCard() {
                 <div className="row">
                     <div className="col-sm-12 col-md-6 my-auto text-center text-md-end">
                         <h5 className="profile-header pt-3 pe-0">José Gerstner</h5>
-                        <p className="profile-text">Fullstack Developer</p>
+                        <p className="profile-text">Software Developer</p>
                         <p>
                             <a href="https://www.linkedin.com/in/jos%C3%A9-ernesto-gerstner-javid/"
                                 target="_blank" 
