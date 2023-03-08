@@ -43,10 +43,10 @@ export class Technologies extends Component {
                             <img className="tech-img img-fluid" alt=".NET" src="/images/technologies/dotnet-logo.png" />
                             <p>.NET</p>
                         </div>
-                        <div className="col">
+                        {/* <div className="col">
                             <img className="tech-img img-fluid" alt=".NET" src="/images/technologies/c-logo.png" />
                             <p>C</p>
-                        </div>
+                        </div> */}
                         <div className="col">
                             <img className="tech-img img-fluid" alt="Laravel" src="/images/technologies/laravel-logo.png" />
                             <p>Laravel</p>

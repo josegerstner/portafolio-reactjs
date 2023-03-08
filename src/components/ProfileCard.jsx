@@ -81,7 +81,7 @@ export function ProfileCard() {
                             </a>
                             <a className="btn btn-lg btn-success btn-download col" 
                                 download 
-                                href="/files/CV José Gerstner.pdf"
+                                href="/files/CV José Gerstner st.pdf"
                                 role="button">
                                 Descargar CV
                             </a>
