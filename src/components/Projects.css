@@ -16,7 +16,7 @@
     height: 80%;
 }
 
-.project-img:hover {
+.project-box:hover img {
     opacity: 40%;
     height: 100%;
     filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
@@ -36,7 +36,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 10px rgba(14, 14, 14, 0.7);
     font-size: 2.5rem;
 }
 
