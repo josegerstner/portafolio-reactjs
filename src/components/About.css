@@ -1,0 +1,21 @@
+.btn-about {
+    background-color: transparent;
+    font-weight: 700;
+    font-size: large;
+    border: none;
+    color: #fafafa;
+}
+
+.txt-about {
+    background-color: #242424;
+    border: transparent;
+    color: #fafafa;
+    font-weight: 500;
+    font-size: large;
+    text-justify: auto;
+}
+
+.container-about {
+    border-radius: 50%;
+    
+}

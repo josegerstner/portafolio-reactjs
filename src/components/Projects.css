@@ -16,8 +16,11 @@
     height: 80%;
 }
 
+.project-box:hover img, .project-box:hover .sombrear {
+    opacity: 20%;
+}
+
 .project-box:hover img {
-    opacity: 40%;
     height: 100%;
     filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
 }
@@ -38,9 +41,15 @@
     color: white;
     text-shadow: 0 0 10px rgba(14, 14, 14, 0.7);
     font-size: 2.5rem;
+    z-index: 999;
 }
 
 .project-box:hover .centrado {
     /* text-shadow: 0.1rem 0.1rem black; */
     display: block;
+}
+
+.description-card {
+    background-color: #242424;
+    border-radius: 25px;
 }

@@ -27,12 +27,12 @@
 }
 
 .btn-download {
-    color: #f6f6f6;
+    /* color: #f6f6f6; */
     border-color: #f6f6f6;
 }
 
 .btn-download:hover {
-    color: f6f6f6;
+    color: #f6f6f6;
     background-color: #242424;
     border-color: #198754;
 }

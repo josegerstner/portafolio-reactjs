@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import profileJSON from '../utils/profile.json'
 import Loading from "./Loading";
 import "./ProfileCard.css";
+import { About } from "./About";
 
 export function ProfileCard() {
 
@@ -54,7 +55,8 @@ export function ProfileCard() {
                 </div>
                 <div className="row">
                     <div className="col-sm-12 col-md-6 my-auto text-center text-md-end">
-                        <h5 className="profile-header pt-3 pe-0">José Gerstner</h5>
+                        <p className="profile-text mt-2">Hola, soy </p>
+                        <h5 className="profile-header pe-0">José Gerstner</h5>
                         <p className="profile-text">Software Developer</p>
                         <p>
                             <a href="https://www.linkedin.com/in/jos%C3%A9-ernesto-gerstner-javid/"
@@ -115,7 +117,7 @@ export function ProfileCard() {
                             alt="José Gerstner" />
                     </div>
                 </div>
-                
+                <About />
             </div>
         );
     }
