@@ -27,19 +27,19 @@ export function Projects(){
                 { projects ? projects.map( (project) => 
                 <div className="col-12 col-md-6 project-box p-2" key={project.name}>
                     <div className="row">
-                        <div className="col">
-                            <a
-                                href={project.link}
-                                target="_blank"
-                                rel="noreferrer">
-                                <img
-                                    className="img-fluid project-img"
-                                    src={`${imagesPath}${project.image}`}
-                                    alt={project.name}
-                                    title={`${project.name} - ${project.technology}`} />
-                            </a>
-                                <div className="centrado text-shadow"><Link>{project.name}</Link></div>
-                        </div>
+                        <a className="col"
+                            href={project.link}
+                            target="_blank"
+                            rel="noreferrer">
+                            <img
+                                className="img-fluid project-img"
+                                src={`${imagesPath}${project.image}`}
+                                alt={project.name}
+                                title={`${project.name} - ${project.technology}`} />
+                            <div className="centrado text-shadow">
+                                {project.name}
+                            </div>
+                        </a>
                         <div className="col card description-card m-2 sombrear">
                             <div className="card-title fs-5">Hecho con {project.technology}</div>
                             <div className="card-text fs-5">{project?.description}</div>
