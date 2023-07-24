@@ -40,12 +40,12 @@ export class Technologies extends Component {
                             <p>JAVA</p>
                         </div>
                         <div className="col">
-                            <img className="tech-img img-fluid" alt=".NET" src="/images/technologies/dotnet-logo.png" />
-                            <p>.NET</p>
+                            <img className="tech-img img-fluid" alt="Python" src="/images/technologies/python-logo.png" />
+                            <p>Python</p>
                         </div>
                         {/* <div className="col">
-                            <img className="tech-img img-fluid" alt=".NET" src="/images/technologies/c-logo.png" />
-                            <p>C</p>
+                            <img className="tech-img img-fluid" alt=".NET" src="/images/technologies/dotnet-logo.png" />
+                            <p>.NET</p>
                         </div> */}
                         <div className="col">
                             <img className="tech-img img-fluid" alt="Laravel" src="/images/technologies/laravel-logo.png" />

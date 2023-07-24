@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import projectsJSON from '../utils/projects.json'
 import "./Projects.css";
+import { Link } from "react-router-dom";
 
 export function Projects(){
     var imagesPath = "/images/projects/";
@@ -37,7 +38,7 @@ export function Projects(){
                                     alt={project.name}
                                     title={`${project.name} - ${project.technology}`} />
                             </a>
-                                <div className="centrado text-shadow">{project.name}</div>
+                                <div className="centrado text-shadow"><Link>{project.name}</Link></div>
                         </div>
                         <div className="col card description-card m-2 sombrear">
                             <div className="card-title fs-5">Hecho con {project.technology}</div>
